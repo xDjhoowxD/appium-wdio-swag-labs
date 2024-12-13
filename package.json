@@ -4,7 +4,9 @@
   "main": "test.js",
   "type": "module",
   "scripts": {
-    "test": "npx mocha pageobjects/tests --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,quiet=false"
+    "androidtest": "npx mocha android/tests --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,quiet=false",
+    "iostest": "npx mocha ios/tests --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,quiet=false"
+
   },
   "author": "",
   "license": "ISC",

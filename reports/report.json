@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2024-12-12T06:28:58.056Z",
-    "end": "2024-12-12T06:29:42.133Z",
-    "duration": 44077,
+    "start": "2024-12-13T01:16:46.326Z",
+    "end": "2024-12-13T01:17:37.946Z",
+    "duration": 51620,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0c1c0cf5-198e-4843-b63e-a3462c5e27a9",
+      "uuid": "13e6300a-145f-4991-af61-a74e6510f5fb",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,26 +27,26 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c369dc0e-6471-473b-8295-b89ce326ac36",
+          "uuid": "16ac834d-7790-4ec6-85b9-5a25a06c2b22",
           "title": "Login Page Tests",
-          "fullFile": "D:\\Code\\appium-wdio-test\\pageobjects\\tests\\LoginTest.js",
-          "file": "\\pageobjects\\tests\\LoginTest.js",
+          "fullFile": "/Users/dtidigital/Documents/appium-wdio-swag-labs-app/ios/tests/LoginTest.js",
+          "file": "/ios/tests/LoginTest.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook in \"Login Page Tests\"",
               "fullTitle": "Login Page Tests \"before all\" hook in \"Login Page Tests\"",
               "timedOut": false,
-              "duration": 3907,
+              "duration": 10032,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver = await remote(appiumCapabilities);\nloginPage = new LoginPage(driver);",
+              "code": "driver = await remote(appiumCapabilitiesIOS);\nloginPage = new LoginPage(driver);",
               "err": {},
-              "uuid": "02e68949-5a4b-4019-b785-b63fe9857686",
-              "parentUUID": "c369dc0e-6471-473b-8295-b89ce326ac36",
+              "uuid": "ae4a9ca2-afd3-4009-a057-0253cb04478e",
+              "parentUUID": "16ac834d-7790-4ec6-85b9-5a25a06c2b22",
               "isHook": true,
               "skipped": false
             }
@@ -57,7 +57,7 @@
               "title": "should not login with blank credentials",
               "fullTitle": "Login Page Tests should not login with blank credentials",
               "timedOut": false,
-              "duration": 7683,
+              "duration": 4884,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -66,8 +66,8 @@
               "context": null,
               "code": "const user = \"\";\nconst password = \"\";\nconst message = \"Username is required\";\nawait loginPage.performLogin(user, password);\nawait expect(await loginPage.errorMessage()).toBeDisplayed();\nawait expect(await loginPage.errorMessage()).toHaveText(message);",
               "err": {},
-              "uuid": "c6ceecef-87ea-4d96-8707-382b4a56b1ee",
-              "parentUUID": "c369dc0e-6471-473b-8295-b89ce326ac36",
+              "uuid": "bad564d8-c31a-448e-b88f-e57e31d28fe4",
+              "parentUUID": "16ac834d-7790-4ec6-85b9-5a25a06c2b22",
               "isHook": false,
               "skipped": false
             },
@@ -75,7 +75,7 @@
               "title": "should not login with invalid credentials",
               "fullTitle": "Login Page Tests should not login with invalid credentials",
               "timedOut": false,
-              "duration": 5956,
+              "duration": 4267,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -84,8 +84,8 @@
               "context": null,
               "code": "const user = \"standard_user2\";\nconst password = \"secret_sauce2\";\nconst message = \"Username and password do not match any user in this service.\";\nawait loginPage.performLogin(user, password);\nawait expect(await loginPage.errorMessage()).toBeDisplayed();\nawait expect(await loginPage.errorMessage()).toHaveText(message);",
               "err": {},
-              "uuid": "07b3f820-2a92-4fa2-8512-f9c74f796d9f",
-              "parentUUID": "c369dc0e-6471-473b-8295-b89ce326ac36",
+              "uuid": "2346b384-1c1f-4352-bc58-8b40b88d97ac",
+              "parentUUID": "16ac834d-7790-4ec6-85b9-5a25a06c2b22",
               "isHook": false,
               "skipped": false
             },
@@ -93,7 +93,7 @@
               "title": "should login with success",
               "fullTitle": "Login Page Tests should login with success",
               "timedOut": false,
-              "duration": 5327,
+              "duration": 3604,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -102,47 +102,47 @@
               "context": null,
               "code": "const user = \"standard_user\";\nconst password = \"secret_sauce\";\nawait loginPage.performLogin(user, password);",
               "err": {},
-              "uuid": "c49cfb68-87e0-48ce-981d-f7bdec59167d",
-              "parentUUID": "c369dc0e-6471-473b-8295-b89ce326ac36",
+              "uuid": "1622497d-dae4-4837-8bd6-852d2284e8e0",
+              "parentUUID": "16ac834d-7790-4ec6-85b9-5a25a06c2b22",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c6ceecef-87ea-4d96-8707-382b4a56b1ee",
-            "07b3f820-2a92-4fa2-8512-f9c74f796d9f",
-            "c49cfb68-87e0-48ce-981d-f7bdec59167d"
+            "bad564d8-c31a-448e-b88f-e57e31d28fe4",
+            "2346b384-1c1f-4352-bc58-8b40b88d97ac",
+            "1622497d-dae4-4837-8bd6-852d2284e8e0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18966,
+          "duration": 12755,
           "root": false,
           "rootEmpty": false,
           "_timeout": 20000
         },
         {
-          "uuid": "f09083af-e872-43e3-93ed-baad6625a51d",
+          "uuid": "d2ffda29-eb06-4a93-adac-5b51f84fa7de",
           "title": "Product Page Tests",
-          "fullFile": "D:\\Code\\appium-wdio-test\\pageobjects\\tests\\ProductTest.js",
-          "file": "\\pageobjects\\tests\\ProductTest.js",
+          "fullFile": "/Users/dtidigital/Documents/appium-wdio-swag-labs-app/ios/tests/ProductTest.js",
+          "file": "/ios/tests/ProductTest.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook in \"Product Page Tests\"",
               "fullTitle": "Product Page Tests \"before all\" hook in \"Product Page Tests\"",
               "timedOut": false,
-              "duration": 11866,
+              "duration": 12889,
               "state": null,
               "speed": null,
               "pass": false,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "driver = await remote(appiumCapabilities);\nloginPage = new LoginPage(driver);\nproductPage = new ProductPage(driver);\nawait loginPage.performLogin(\"standard_user\", \"secret_sauce\");",
+              "code": "driver = await remote(appiumCapabilitiesIOS);\nloginPage = new LoginPage(driver);\nproductPage = new ProductPage(driver);\nawait loginPage.performLogin(\"standard_user\", \"secret_sauce\");",
               "err": {},
-              "uuid": "e659a929-f369-4b4c-9177-50b72e508cea",
-              "parentUUID": "f09083af-e872-43e3-93ed-baad6625a51d",
+              "uuid": "5e050222-ce48-4adb-bf06-7d679a0797d2",
+              "parentUUID": "d2ffda29-eb06-4a93-adac-5b51f84fa7de",
               "isHook": true,
               "skipped": false
             }
@@ -153,7 +153,7 @@
               "title": "should add backpack to basket",
               "fullTitle": "Product Page Tests should add backpack to basket",
               "timedOut": false,
-              "duration": 9330,
+              "duration": 15923,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -162,23 +162,23 @@
               "context": null,
               "code": "await productPage.backpackItem().waitForDisplayed({ timeout: 5000 });\nawait productPage.backpackItem().click();\nawait driver.pause(5000);\nawait productPage.addToCartCtaButton().scrollIntoView({ direction: 'down', maxScrolls: 2 });\nawait productPage.addToCartCtaButton().waitForDisplayed({ timeout: 5000 });\nawait productPage.addToCartCtaButton().click();",
               "err": {},
-              "uuid": "a8ed8307-4ceb-4354-a9bf-8ec9199c58be",
-              "parentUUID": "f09083af-e872-43e3-93ed-baad6625a51d",
+              "uuid": "bf7673a8-0460-4621-8617-7efada8128bb",
+              "parentUUID": "d2ffda29-eb06-4a93-adac-5b51f84fa7de",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a8ed8307-4ceb-4354-a9bf-8ec9199c58be"
+            "bf7673a8-0460-4621-8617-7efada8128bb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9330,
+          "duration": 15923,
           "root": false,
           "rootEmpty": false,
-          "_timeout": 20000
+          "_timeout": 60000
         }
       ],
       "passes": [],
